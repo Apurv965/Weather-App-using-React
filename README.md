@@ -1,16 +1,52 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Weather App
 
-Currently, two official plugins are available:
+**Simple React weather app using Material UI styles**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Description:**
+- This is a small single-page React application that fetches current weather data for a searched location and displays it with a clean, responsive UI. It demonstrates working with the OpenWeatherMap API (or similar), React component structure, and basic styling.
 
-## React Compiler
+**Features:**
+- Search for a city and get current weather (temperature, description, humidity, wind).
+- Clean, responsive UI components and info boxes.
+- Minimal dependencies and easy to extend.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Setup:**
+1. Install dependencies:
 
-## Expanding the ESLint configuration
+```
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Add your weather API key (example for OpenWeatherMap): create a `.env` file in the project root and add:
+
+```
+VITE_WEATHER_API_KEY=your_api_key_here
+```
+
+3. Run the development server:
+
+```
+npm run dev
+```
+
+**Usage:**
+- Open the app in your browser (Vite will show the local URL). Use the search box to enter a city name and press Enter or click the search button. The app will display the current weather details.
+
+**Project structure (high level):**
+- `src/` — React source files
+- `src/WeatherApp.jsx` — main app component
+- `src/SearchBox.jsx` — search input and submit
+- `src/InfoBox.jsx` — weather info display components
+
+**Scripts:**
+- `npm run dev` — start dev server
+- `npm run build` — build for production
+- `npm run preview` — preview production build
+
+**Contributing:**
+- Improvements, bug fixes and feature requests are welcome. Create an issue or submit a PR.
+
+**License:**
+- MIT (or choose whichever you prefer)
+
