@@ -44,9 +44,4 @@ npm run dev
 - `npm run build` — build for production
 - `npm run preview` — preview production build
 
-**Contributing:**
-- Improvements, bug fixes and feature requests are welcome. Create an issue or submit a PR.
-
-**License:**
-- MIT (or choose whichever you prefer)
 
